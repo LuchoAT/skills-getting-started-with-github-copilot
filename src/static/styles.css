@@ -151,8 +151,8 @@ footer {
 
 .participants-list {
   margin-top: 8px;
-  padding-left: 18px;
-  list-style-position: inside;
+  padding-left: 0;
+  list-style: none;
 }
 
 .participant-item {
@@ -162,8 +162,18 @@ footer {
   background-color: #e8f1ff;
   color: #0d47a1;
   border: 1px solid #cfe0ff;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 14px;
+  max-width: fit-content;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #d32f2f;
+  font-weight: bold;
 }
 
 /* Texto cuando no hay participantes */
